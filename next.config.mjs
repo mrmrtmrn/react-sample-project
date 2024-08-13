@@ -2,12 +2,8 @@
 const nextConfig = {
   output: 'export',
   distDir: 'docs',
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
-  assetPrefix: process.env.NEXT_PUBLIC_ASSET_PREFIX || '',
-  images: {
-    loader: 'imgix',
-    path: process.env.NEXT_PUBLIC_ASSET_PREFIX || '',
-  },
+  basePath: process.env.NODE_ENV === 'production' ? '/react-sample-project' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/react-sample-project/' : '',
 };
 
 export default nextConfig;
