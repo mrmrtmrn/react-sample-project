@@ -11,7 +11,8 @@
 
 # next.js
 /.next/
-/docs/
+/docs/*
+!/docs/.gitkeep
 
 # production
 /build
