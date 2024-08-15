@@ -13,7 +13,7 @@ export default function Home() {
           priority
         />
       </div>
-      <div>root page</div>
+      <div>Sample</div>
     </main>
   );
 }
